@@ -1,3 +1,5 @@
+import '../../Entity/btest1/Gter1/Gter1_entity_list_screen.dart';
+
 import 'dart:async';
 // ignore: unused_import
 import 'dart:math';
@@ -133,6 +135,20 @@ class _TabbedLayoutComponentState extends State<TabbedLayoutComponent> {
               ),
 
               // NEW MENU
+ListTile(
+                title: const Text('Gter1'),
+                onTap: () {
+                  Navigator.pop(context); // Closes the drawer
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>
+                          gter1_entity_list_screen(), //go to get all entity
+                    ),
+                  );
+                },
+              ),
+
             ],
           ),
         ),
